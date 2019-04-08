@@ -41,7 +41,7 @@ class HomePageTest(TestCase):
 		response = self.client.get('/')
 
 		self.assertIn('itemy 1', response.content.decode())
-		self.assertIn('itemy 2', response.content.decode())
+		self.assertIn('itemy 2', response.content.decode())		
 
 class ItemModelTest(TestCase):
 
